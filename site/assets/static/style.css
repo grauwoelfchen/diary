@@ -1,0 +1,130 @@
+body {
+  font-family: 'Verdana', sans-serif;
+  margin: 1.82rem 1.1rem;
+  text-align: center;
+  color: #888888;
+}
+
+/* link */
+a {
+  color: #c1cdcd;
+}
+
+a:hover {
+  color: #999999;
+}
+
+/* layout */
+header, footer, div.page {
+  width: 700px;
+  margin: 0 auto;
+  padding-left: 2.36rem;
+  padding-right: 2.36rem;
+}
+
+header {
+  padding-top: 2.06rem;
+}
+
+footer {
+  padding-top: 1.99rem;
+}
+
+/* site title */
+header .title {
+  color: #169bbd;
+  margin: 0;
+  font-weight: normal;
+  font-size: 2.64em;
+}
+
+header .title a {
+  text-decoration: none;
+}
+
+/* nav */
+header nav ul {
+  margin: 2.56rem 0 1.03rem 0;
+  padding: 0;
+}
+
+header nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 0.78rem 0 0;
+  padding: 0;
+}
+
+header nav ul li.item {
+  display: inline-block;
+}
+
+/* container */
+.page {
+  padding-top: 1.36rem;
+}
+
+.post {
+  padding: 0 0 2.39rem 0;
+  border-bottom: 1px solid #f3f3f3;
+}
+
+.index > .post:nth-last-child(2),
+.page > .post:last-child {
+  border: none;
+}
+
+.index .post {
+  margin: 1.26rem 0 2.81rem 0;
+}
+
+/* label */
+span.label {
+  display: inline-block;
+  padding: 0.26rem 0.78rem;
+  margin: 0;
+  border-radius: 1.116rem;
+  font-size: 0.98em;
+  font-family: monospace;
+}
+
+span.label.none {
+  background: #d3d3d3;
+}
+
+span.label.sweets {
+  background: #fad8d2;
+}
+
+/* body */
+.body {
+  width: 330px;
+  margin: 2.12rem auto 1.2rem auto;
+}
+
+.body .content {
+  margin: 1.63rem 0;
+}
+
+/* figure */
+.img {
+  margin: 0.86rem auto;
+}
+
+.img img {
+  display: block;
+  margin: 0 auto;
+  border: 2px solid #d3d3d3;
+  border-radius: 0.21rem;
+}
+
+.img .caption {
+  display: inline-block;
+  margin: 0.36rem 0;
+  font-size: 0.816em;
+}
+
+/* pagination */
+.pagination {
+  margin: 3.91rem 0 1.2rem 0;
+}

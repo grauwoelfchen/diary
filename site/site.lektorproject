@@ -1,0 +1,14 @@
+[project]
+name = Yasuhiro's Website
+url = http://yasuhiro.asaka.io/
+locale = en_US
+
+[alternatives.en]
+name = English
+locale = en_US
+primary = true
+
+[alternatives.de]
+name = Deutsch
+locale = de
+url_prefix = /de/

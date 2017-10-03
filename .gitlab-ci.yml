@@ -1,0 +1,12 @@
+image: python:3.5.4
+
+pages:
+  script:
+    - pip install lektor
+    - cd site
+    - lektor build --output-path ../public
+  artifacts:
+    paths:
+      - public
+  only:
+    - master
