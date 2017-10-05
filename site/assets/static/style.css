@@ -96,6 +96,10 @@ span.label.sweets {
   background: #fad8d2;
 }
 
+span.label.work {
+  background: #cfe2cf;
+}
+
 /* body */
 .body {
   width: 330px;
