@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 {% from "macros/post.html" import render_post %}
 {% from "macros/pagination.html" import render_pagination %}
-{% block title %}Yasuhiro's Graffiti{% endblock %}
+{% block title %}Grauwoelfchen's Archive{% endblock %}
 {% block body %}
   <div class="index">
   {% for post in site.get('/post', alt=this.alt).pagination.items %}
