@@ -1,0 +1,18 @@
+{% macro render_description(klass, that, from_index=true) %}
+<div class="{{ klass }}">
+  <h1 class="title"><a href="/">Grauwoelfchen's Archive</a></h1>
+  <p><span class="monospaced">~yasuhiro</span></p>
+  <nav>
+    <ul class="nav">
+      {% for alt in get_alts(that) %}
+        {% if that.alt != alt %}
+        <li class="item"><a href="{{ './'|url(alt=alt) }}">{{ that.pad.config.get_alternative(alt).name['en']|title }}</a></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </nav>
+  {% if from_index %}
+  <a href="mailto:yasuhiro.asaka@grauwoelfchen.net" rel="author">yasuhiro.asaka@grauwoelfchen.net</a>
+  {% endif %}
+</div>
+{% endmacro %}
