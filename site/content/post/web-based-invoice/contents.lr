@@ -2,16 +2,16 @@ title: Web based invoice
 ---
 pub_date: 2017-10-05
 ---
+has_cover: true
+---
 category: work
 ---
 category_label: Work
 ---
 outline:
-
 Today, I made a new web based invoice for my firm...
 ---
 body:
-
 Today, I made a new web based invoice for my firm https://lupine-software.com[
 Lupine Software LLC].
 

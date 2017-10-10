@@ -1,4 +1,4 @@
-{% macro render_post(post, from_index=false) %}
+{% macro render_post(post, alt='en', from_index=false) %}
   <div class="post">
   {% if from_index %}
     <h2><a href="{{ post|url }}">{{ post.title }}</a></h2>
@@ -12,17 +12,24 @@
       {{ post.pub_date }}
       {% endif %}
     </p>
+
+    {% if post.category %}
     <p class="category">
-      <span class="label {{ post.category|lower }}">{{ post.category_label|title }}</span>
+      <span class="label {{ post.category|lower }}">{{ (post.category_label or post.category)|title }}</span>
     </p>
+    {% endif %}
+
     <div class="body">
-      {# image #}
-      {% for img in post.attachments.images %}
+      {# cover attachments #}
+      {% if from_index or post.has_cover %}
+      {% for img in post.attachments.images.filter(F.is_cover) %}
       <figure class="img">
         <img src="{{ img.thumbnail(300)|url }}" alt="{{ img.alt }}">
         <figcaption class="caption">{{ img.license }}, &copy; {{ img.copyright }}</figcaption>
       </figure>
       {% endfor %}
+      {% endif %}
+
       {% if from_index %}
       <div class="outline">
       {{ post.outline }}

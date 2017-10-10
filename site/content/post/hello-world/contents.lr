@@ -2,14 +2,14 @@ title: Hello World!
 ---
 pub_date: 2017-09-30
 ---
+has_cover: false
+---
 category: none
 ---
 category_label: None
 ---
 outline:
-
 ...
 ---
 body:
-
 It works!

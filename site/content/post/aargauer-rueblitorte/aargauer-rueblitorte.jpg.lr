@@ -1,5 +1,7 @@
 _model: image
 ---
+is_cover: true
+---
 alt: Aargauer Rüblitorte
 ---
 copyright: 2017 Yasuhiro Asaka

@@ -5,7 +5,7 @@
 {% block body %}
   <div class="index">
   {% for post in site.get('/post', alt=this.alt).pagination.items %}
-    {{ render_post(post, from_index=true) }}
+    {{ render_post(post, alt=this.alt, from_index=true) }}
   {% endfor %}
   {{ render_pagination(this.pagination) }}
   </div>

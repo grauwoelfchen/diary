@@ -1,5 +1,7 @@
 _model: image
 ---
+is_cover: true
+---
 alt: New Invoice (Lupine Software LLC)
 ---
 copyright: 2017 Yasuhiro Asaka
