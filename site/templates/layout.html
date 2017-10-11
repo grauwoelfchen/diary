@@ -11,7 +11,7 @@
     <header>
      {{ render_description('description', this) }}
     </header>
-    <section class="container">
+    <section class="container" tabindex="-1">
      {{ render_description('only mobile description', this, from_index=false) }}
       <div class="page">
         {% block body %}{% endblock %}
@@ -21,4 +21,11 @@
       </footer>
     </section>
   </div>
+  <script>
+(function() {
+  // for scroll using keyboard
+  var container = document.querySelector('.container');
+  container.focus();
+})();
+  </script>
 </body>

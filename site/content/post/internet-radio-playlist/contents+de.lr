@@ -1,0 +1,157 @@
+title: Internet Radio Playlist
+---
+pub_date: 2017-10-11
+---
+has_cover: false
+---
+category: music
+---
+category_label: Musik
+---
+outline:
+Wie hört man Internet Radio mit MPlayer...
+---
+body:
+Wie hört man Internet Radio mit
+link:http://www.mplayerhq.hu/design7/news.html[MPlayer].
+
+Als ich an die Arbeit bin, Ich höre immer Radio ♪ +
+Ich verwende `mplayer` command Internet Radio auf meinem Computer
+zu hören. Es ist sehr einfach.
+
+Einige Stations geben uns verschiedene Datei Formats wie `mp3` oder `aac`
+Streaming für Hören. Wir können auch Internet Radio Streaming genau gleich wie
+Dateien im Local mit Playlist hören (`.pls` or `.m3u`).
+
+Web Browsers Tab ist zu kostbare Resoure für uns Musik zu hören, in 2017. Nicht wahr? +
+Wie ihr, Auch Ich höre Musik aus mp3 im Local auf MPlayer mit `.m3u` wie so :-D
+
+.cat lerex.mp3
+[txt]
+---------
+./wildman/Le Rex - Wild Man - 01 Mole's Dream of the Prairie.mp3
+./wildman/Le Rex - Wild Man - 02 Home Alone.mp3
+...
+./ascona/Le Rex - Ascona - 01 Hard Times.mp3
+...
+---------
+
+Ich habe die Musik von Le Rex am link:https://www.jazzfestivalwillisau.ch/[Jazz Festival Willisau] 2017 genossen!
+
+link:http://lerexmusic.ch/[]
+
+
+== Wie lässt man das command laufen?
+
+.mplayer command arguments
+[zsh]
+---------
+: nur das!
+% mplayer -playlist <file>.pls
+
+: oder wie so
+% mplayer -playlist <file>.m3u
+---------
+
+
+== Was ist `.pls` Datai?
+
+Das ist einen Text Playlist Datei. Du kannst das aus Radio Station unterladen,
+oder du kannst das selber machen.
+
+Zum Beispiel, +icecast+ von Radio Zürisee ist da:
+
+http://mp3.radio.ch/
+
+Du sollst es machen, wie das:
+
+.cat <file>.pls
+[zsh]
+---------
+% cat radio/zurisee/zurisee.pls
+[playlist]
+NumberOfEntries=2
+File1=http://radio.netstream.ch:80/radiozuerisee128k
+Title1=Radio Zürisee: Radio Zürisee (#1  ): Immer 5 Minuten besser
+Length=1
+File2=http://radio.netstream.ch:80/radiozuerisee128k
+Title2=Radio Zürisee: Radio Zürisee (#2  ): Immer 5 Minuten besser
+Length=2
+Version=2
+---------
+
+[NOTE]
+``Immer 5 Minuten besser'' ist erklärung bei Radio Zürisee. Ich mag das!
+
+Diese URLs ist schon in `.m3u` enthalten.
+
+
+== Was ist `.m3u` Datei?
+
+Auch das ist Playlist Datei. +
++m3u+ enthält einige URLs in da. Das ist auch ganz normal Text.
+
+.cat <file>.m3u
+[zsh]
+---------
+% curl -sLO http://mp3.radio.ch/radiozuerisee128k.m3u
+% cat radiozuerisee128k.m3u
+http://radio.netstream.ch:80/radiozuerisee128k
+---------
+
+Natürlich, du kannst andere Rate auswählen (64k, usw.).
+
+
+== Meine Lieblingsstations
+
+Beim historisches Grund, Ich benutze `.pls` moment für Inetrnet Radio +
+Wenn dein Radio Station dir `.m3u` gibt, du möchtest das benutzen.
+`.m3u` soll noch mehr einfach als das sein (zu machen).
+
+.my <file>.pls
+[zsh]
+----------
+% cd /path/to/studio
+% tree radio
+radio
+├── radio24
+│   └── radio24.pls
+├── radioswissjazz
+│   └── radioswissjazz.pls
+├── radioswisspop
+│   └── radioswisspop.pls
+├── somafm
+│   ├── dronezone.pls
+│   └── groovesalad.pls
+├── srf
+│   ├── srf1.pls
+│   ├── srf3.pls
+│   └── srf4-news.pls
+└── zurisee
+    └── zurisee.pls
+
+6 directories, 9 files
+----------
+
+* link:https://www.radio.ch/[Radio Zürisee]
+* link:https://www.radio24.ch/[Radio 24]
+* link:https://www.radiopopjazz.ch/de[Radio Swiss Pop]
+* link:https://www.radioswissjazz.ch/de[Radio Swiss Jazz]
+* link:http://www.srf.ch/radio-srf-1[SRF1]
+* link:http://www.srf.ch/radio-srf-3[SRF3]
+* link:http://www.srf.ch/radio-srf-4-news[SRF4 News]
+* link:http://somafm.com/[soma fm]'s link:http://somafm.com/groovesalad/[Groove Salad]
+* link:http://somafm.com/[soma fm]'s link:http://somafm.com/dronezone/[Drone Zone]
+
+
+Ich habe `.pls` Dateien von diese Stations auf Online geschrieben (für mich). +
+Es ist möglich aus da:
+https://gitlab.com/snippets/1679095
+
+
+== References
+
+* link:https://wiki.archlinux.org/index.php/Icecast[]
+* link:http://icecast.org/docs/[]
+* link:https://en.wikipedia.org/wiki/PLS_(file_format)[]
+* link:https://en.wikipedia.org/wiki/M3U[]
