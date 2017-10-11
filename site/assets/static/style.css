@@ -81,6 +81,8 @@ header .description {
 
 .container {
   flex: 1 1 auto;
+  outline: 0;
+  outline-style: none;
   overflow-x: visible;
   overflow-y: auto;
   padding-left: 1.86rem;
