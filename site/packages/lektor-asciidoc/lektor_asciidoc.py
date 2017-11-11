@@ -3,7 +3,6 @@ from subprocess import PIPE, Popen
 from lektor.pluginsystem import Plugin
 from lektor.types import Type
 
-
 def asciidoc_to_html(text):
     p = Popen(
         ['asciidoc', '--no-header-footer',
