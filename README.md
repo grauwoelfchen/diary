@@ -1,4 +1,4 @@
-# Yasuhiro's Website
+# Grauwoelfchen's Archive
 
 The website of https://yasuhiro.asaka.io/
 
@@ -32,35 +32,45 @@ The website of https://yasuhiro.asaka.io/
 
 ## License
 
+```txt
+Grauwoelfchen's Archive
 Copyright (c) 2017 Yasuhiro Asaka
+```
 
 ### Software (program)
+
+`BSD-3-Clause`
 
 This is free software:  
 You can redistribute it and/or modify it under the terms of
 the [BSD 3-Clause](
 https://opensource.org/licenses/BSD-3-Clause) License.
 
-### Post (content)
+### Post (article)
 
-The is distributed as **GNU Free Documentation
-License**. (version 1.3)
+`GFDL-1.3`
 
+Posts are distributed as GNU Free Documentation License. (version 1.3)
+
+```txt
 Permission is granted to copy, distribute and/or modify this document
 under the terms of the GNU Free Documentation License, Version 1.3
 or any later version published by the Free Software Foundation;
 with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
 A copy of the license is included in the section entitled "GNU
 Free Documentation License".
+```
 
-See [LICENSE](LICENSE). (`GFDL-1.3`)
+See [LICENSE](LICENSE).
 
-### Image (media)
+### Image
+
+`CC-BY-NC-SA-4.0`
+
+Illustrations and photos are licensed under the
+Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
+License.
 
 [![Creative Commons License](
 https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)](
 http://creativecommons.org/licenses/by-nc-sa/4.0/)
-
-This work is licensed under a [
-Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
-License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
