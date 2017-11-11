@@ -46,6 +46,18 @@ You can redistribute it and/or modify it under the terms of
 the [BSD 3-Clause](
 https://opensource.org/licenses/BSD-3-Clause) License.
 
+### Image
+
+`CC-BY-NC-SA-4.0`
+
+Illustrations and photos are licensed under the
+Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
+License.
+
+[![Creative Commons License](
+https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)](
+http://creativecommons.org/licenses/by-nc-sa/4.0/)
+
 ### Post (article)
 
 `GFDL-1.3`
@@ -62,15 +74,3 @@ Free Documentation License".
 ```
 
 See [LICENSE](LICENSE).
-
-### Image
-
-`CC-BY-NC-SA-4.0`
-
-Illustrations and photos are licensed under the
-Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
-License.
-
-[![Creative Commons License](
-https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)](
-http://creativecommons.org/licenses/by-nc-sa/4.0/)
