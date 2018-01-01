@@ -116,6 +116,8 @@ If your radio station offers you `.m3u`, you may want to use it.
 radio
 ├── radio24
 │   └── radio24.pls
+├── radioswissclassic
+│   └── radioswissclassic.pls
 ├── radioswissjazz
 │   └── radioswissjazz.pls
 ├── radioswisspop
@@ -135,6 +137,7 @@ radio
 
 * link:https://www.radio.ch/[Radio Zürisee]
 * link:https://www.radio24.ch/[Radio 24]
+* link:https://www.radioswissclassic.ch/de[Radio Swiss Classic]
 * link:https://www.radiopopjazz.ch/de[Radio Swiss Pop]
 * link:https://www.radioswissjazz.ch/de[Radio Swiss Jazz]
 * link:http://www.srf.ch/radio-srf-1[SRF1]
