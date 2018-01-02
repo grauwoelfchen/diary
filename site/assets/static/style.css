@@ -193,6 +193,10 @@ span.monospaced {
   display: inline-block;
 }
 
+span.monospaced a {
+  text-decoration: none;
+}
+
 
 .body span.monospaced {
   font-family: monospace;

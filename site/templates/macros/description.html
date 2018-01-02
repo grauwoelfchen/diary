@@ -1,7 +1,7 @@
 {% macro render_description(klass, that, from_index=true) %}
 <div class="{{ klass }}">
-  <h1 class="title"><a href="/">Grauwoelfchen's Archive</a></h1>
-  <p><span class="monospaced">~yasuhiro</span></p>
+  <h1 class="title"><a href="/">Grauwoelfchen's Diary</a></h1>
+  <p><span class="monospaced">~<a href="https://grauwoelfchen.net/about">yasuhiro</a></span></p>
   <nav>
     <ul class="nav">
       {% for alt in get_alts(that) %}
@@ -11,8 +11,6 @@
       {% endfor %}
     </ul>
   </nav>
-  {% if from_index %}
-  <a href="mailto:yasuhiro.asaka@grauwoelfchen.net" rel="author">yasuhiro.asaka@grauwoelfchen.net</a>
-  {% endif %}
+  <p>Miscellaneous daily posts</p>
 </div>
 {% endmacro %}
