@@ -1,6 +1,8 @@
-# Grauwoelfchen's Archive
+# Grauwoelfchen's Diary
 
-The website of https://yasuhiro.asaka.io/
+Miscellaneous daily posts.
+
+The website of https://diary.grauwoelfchen.net/
 
 
 ## Setup
@@ -33,7 +35,7 @@ The website of https://yasuhiro.asaka.io/
 ## License
 
 ```txt
-Grauwoelfchen's Archive
+Grauwoelfchen's Diary
 Copyright (c) 2017 Yasuhiro Asaka
 ```
 
