@@ -1,5 +1,5 @@
 stages:
-  - pages
+  - build
 
 variables:
   APT_CACHE_DIR: apt-cache
@@ -11,8 +11,9 @@ cache:
     - apt-cache
     - pip-cache
 
-pages:
-  stage: pages
+build:
+  # just build (not publish)
+  stage: build
   image: python:3.5.4
   before_script:
     - mkdir -pv $APT_CACHE_DIR && apt-get -qq update
@@ -25,9 +26,9 @@ pages:
     - cd site
     - lektor clean --yes
     - lektor build --output-path ../public --no-prune
-  artifacts:
-    untracked: true
-    paths:
-      - public
+  # artifacts:
+  #   untracked: true
+  #   paths:
+  #     - public
   only:
     - master
