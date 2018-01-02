@@ -36,7 +36,7 @@ The website of https://diary.grauwoelfchen.net/
 
 ```txt
 Grauwoelfchen's Diary
-Copyright (c) 2017 Yasuhiro Asaka
+Copyright (c) 2017-2018 Yasuhiro Asaka
 ```
 
 ### Software (program)
