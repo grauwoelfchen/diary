@@ -1,7 +1,6 @@
 {% macro render_description(klass, that, from_index=true) %}
 <div class="{{ klass }}">
   <h1 class="title"><a href="/">Grauwoelfchen's Diary</a></h1>
-  <p><span class="monospaced">~<a href="https://grauwoelfchen.net/about">yasuhiro</a></span></p>
   <nav>
     <ul class="nav">
       {% for alt in get_alts(that) %}
@@ -12,5 +11,6 @@
     </ul>
   </nav>
   <p>Miscellaneous daily posts</p>
+  <p><span class="monospaced">~<a href="https://grauwoelfchen.net/about">yasha</a></span></p>
 </div>
 {% endmacro %}
