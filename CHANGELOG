@@ -1,4 +1,5 @@
 19 Jan 2023 Yasuhiro Яша Asaka <yasuhiro.asaka@grauwoelfchen.net>
+	* Change the main branch as trunk (from master)
 	* Add Makefile
 	* Update Python and Lektor version
 
