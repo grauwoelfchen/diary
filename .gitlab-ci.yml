@@ -14,7 +14,7 @@ cache:
 build:
   # just build (not publish)
   stage: build
-  image: python:3.5.4
+  image: python:3.11.1
   before_script:
     - mkdir -pv $APT_CACHE_DIR && apt-get -qq update
     - apt-get -qq -o dir::cache::archives="$APT_CACHE_DIR" install -y
