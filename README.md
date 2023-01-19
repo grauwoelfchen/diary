@@ -8,8 +8,10 @@ The website of https://diary.grauwoelfchen.net/
 ## Setup
 
 ```zsh
+# use the recent one e.g.
 % python -V
-3.5.4
+3.11.1
+
 % python -m venv venv
 % source ./venv/bin/activate
 (venv) % pip install --upgrade pip setuptools
@@ -36,7 +38,7 @@ The website of https://diary.grauwoelfchen.net/
 
 ```txt
 Grauwoelfchen's Diary
-Copyright (c) 2017-2018 Yasuhiro Asaka
+Copyright (c) 2017-2023 Yasuhiro Яша Asaka
 ```
 
 ### Software (program)
