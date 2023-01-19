@@ -3,8 +3,5 @@ __pycache__
 *.pyc
 *.pyo
 
-venv
-node_modules
-public
-
-.*-version
+/venv
+/public
