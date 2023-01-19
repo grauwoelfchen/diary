@@ -1,3 +1,7 @@
+19 Jan 2023 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
+	* Add Makefile
+	* Update Python and Lektor version
+
 03 Jan 2017 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
 	* Change site domain
 	* Update title as `Grauwoelfchen's Diary`
