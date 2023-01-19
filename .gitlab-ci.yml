@@ -12,23 +12,15 @@ cache:
     - pip-cache
 
 build:
-  # just build (not publish)
   stage: build
   image: python:3.11.1
   before_script:
     - mkdir -pv $APT_CACHE_DIR && apt-get -qq update
-    - apt-get -qq -o dir::cache::archives="$APT_CACHE_DIR" install -y
-      asciidoc
+    - apt-get -qq -o dir::cache::archives="$APT_CACHE_DIR" install -y asciidoc
     - python --version
     - pip --version
     - pip install Lektor -c constraints.txt
   script:
-    - cd site
-    - lektor clean --yes
-    - lektor build --output-path ../public --no-prune
-  # artifacts:
-  #   untracked: true
-  #   paths:
-  #     - public
+    - make build
   only:
     - master
