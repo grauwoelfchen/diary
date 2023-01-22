@@ -1,3 +1,6 @@
+22 Jan 2023 Yasuhiro Яша Asaka <yasuhiro.asaka@grauwoelfchen.net>
+	* Add robots.txt and favicon.ico
+
 19 Jan 2023 Yasuhiro Яша Asaka <yasuhiro.asaka@grauwoelfchen.net>
 	* Change the main branch as trunk (from master)
 	* Add Makefile
