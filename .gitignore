@@ -4,4 +4,6 @@ __pycache__
 *.pyo
 
 /venv
-/public
+/public/**/*
+!/public/robots.txt
+!/public/favicon.ico
