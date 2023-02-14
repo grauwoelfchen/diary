@@ -284,12 +284,13 @@ span.label {
   display: inline-block;
   padding: 0.26rem 0.78rem;
   margin: 0;
-  border-radius: 1.116rem;
+  border-radius: 0.186rem;
   font-size: 0.98em;
   font-family: monospace;
 }
 
 span.label.none { background: #d3d3d3; }
+span.label.food { background: #769c75; color: #eff4ef; }
 span.label.sweets { background: #fad8d2; }
 span.label.work { background: #cfe2cf; }
 span.label.music { background: #d1f6f8; }
