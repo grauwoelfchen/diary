@@ -162,6 +162,16 @@ nav ul.nav li.item a {
   margin: 3.16rem 0 0.06rem 0;
 }
 
+.post .date,
+.post .alt {
+  display: inline;
+  margin: 0.13rem 0.82rem 0.13rem 0.06rem;
+}
+
+.alt .undiscoverable {
+  color: #d6d6d6;
+}
+
 .body {
   margin: 2.12rem 0 1.2rem 0;
 }

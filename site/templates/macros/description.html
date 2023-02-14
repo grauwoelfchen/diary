@@ -1,11 +1,13 @@
 {% macro render_description(klass, that, from_index=true) %}
 <div class="{{ klass }}">
-  <h1 class="title"><a href="/">Grauwoelfchen's Diary</a></h1>
+  <h1 class="title"><a href="{{ '/'|url }}">Grauwoelfchen's Diary</a></h1>
   <nav>
     <ul class="nav">
-      {% for alt in get_alts(that) %}
+      {% for alt in get_alts() %}
         {% if that.alt != alt %}
-        <li class="item"><a href="{{ './'|url(alt=alt) }}">{{ that.pad.config.get_alternative(alt).name['en']|title }}</a></li>
+          <li class="item">
+            <a href="{{ '/'|url(alt=alt) }}">{{ that.pad.config.get_alternative(alt).name['en']|title }}</a>
+          </li>
         {% endif %}
       {% endfor %}
     </ul>

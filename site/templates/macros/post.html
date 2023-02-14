@@ -1,17 +1,32 @@
 {% macro render_post(post, alt='en', from_index=false) %}
 <div class="post">
   {% if from_index %}
-  <h1><a href="{{ post|url }}">{{ post.title }}</a></h1>
+    <h1><a href="{{ post|url }}">{{ post.title }}</a></h1>
   {% else %}
-  <h1>{{ post.title }}</h1>
+    <h1>{{ post.title }}</h1>
   {% endif %}
-  <p class="meta">
+
+  <p class="date">
     {% if alt == 'de' %}
-    {{ post.pub_date|dateformat('dd-MM-YYYY') }}
+      {{ post.pub_date|dateformat('dd-MM-YYYY') }}
     {% else %}
-    {{ post.pub_date }}
+      {{ post.pub_date }}
     {% endif %}
   </p>
+
+  {% if not from_index %}
+    <p class="alt">
+    {% for alt in get_alts() %}
+      {% if post.alt != alt %}
+        {% if post.pad.get(post.path, alt).is_discoverable %}
+          <a href="{{ './'|url(alt=alt) }}">{{ post.pad.config.get_alternative(alt).name['en']|title }}</a>
+        {% else %}
+          <span class="undiscoverable">{{ post.pad.config.get_alternative(alt).name['en']|title }}</span>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+    </p>
+  {% endif %}
 
   {% if post.category %}
   <p class="category">
@@ -22,22 +37,22 @@
   <div class="body">
     {# cover attachments #}
     {% if from_index or post.has_cover %}
-    {% for img in post.attachments.images.filter(F.is_cover) %}
-    <figure class="img">
-      <img src="{{ img.thumbnail(300)|url }}" alt="{{ img.alt }}">
-      <figcaption class="caption">{{ img.license }}, &copy; {{ img.copyright }}</figcaption>
-    </figure>
-    {% endfor %}
+      {% for img in post.attachments.images.filter(F.is_cover) %}
+        <figure class="img">
+          <img src="{{ img.thumbnail(300)|url }}" alt="{{ img.alt }}">
+          <figcaption class="caption">{{ img.license }}, &copy; {{ img.copyright }}</figcaption>
+        </figure>
+      {% endfor %}
     {% endif %}
 
     {% if from_index %}
-    <div class="outline">
-    {{ post.outline }}
-    </div>
+      <div class="outline">
+        {{ post.outline }}
+      </div>
     {% else %}
-    <div class="content">
-    {{ post.body }}
-    </div>
+      <div class="content">
+        {{ post.body }}
+      </div>
     {% endif %}
   </div>
 </div>
