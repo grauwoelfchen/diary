@@ -3,6 +3,10 @@ __pycache__
 *.pyc
 *.pyo
 
+.autoenv
+.env
+.envrc
+
 /venv
 /public/**/*
 !/public/robots.txt
