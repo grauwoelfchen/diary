@@ -1,4 +1,4 @@
-# Grauwoelfchen's Diary
+# Diary
 
 Miscellaneous daily posts.
 
@@ -37,7 +37,7 @@ The website of https://diary.grauwoelfchen.net/
 ## License
 
 ```txt
-Grauwoelfchen's Diary
+Diary
 Copyright (c) 2017-2023 Yasuhiro Яша Asaka
 ```
 
