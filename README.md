@@ -38,7 +38,7 @@ The website of https://diary.grauwoelfchen.net/
 
 ```txt
 Diary
-Copyright (c) 2017-2023 Yasuhiro Яша Asaka
+Copyright (c) 2017-2025 Yasha
 ```
 
 ### Software (program)
