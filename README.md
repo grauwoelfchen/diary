@@ -1,3 +1,10 @@
+> [!NOTE]
+>
+> This repository has been moved. Please check the new locations below.
+>
+> * [~grauwoelfchen/diary](https://git.sr.ht/~grauwoelfchen/diary) on Sourcehut
+> * [grauwoelfchen/diary](https://codeberg.org/grauwoelfchen/diary) on Codeberg
+
 # Diary
 
 Miscellaneous daily posts.
