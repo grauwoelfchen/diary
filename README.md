@@ -5,32 +5,42 @@ Miscellaneous daily posts.
 The website of https://diary.grauwoelfchen.net/
 
 
+## Requirements
+
+* Python (Virtualenv)
+* Imagemagick
+* (optional) autoenv
+
+
 ## Setup
 
 ```zsh
-# use the recent one e.g.
-% python -V
+% cat .python-version
 3.11.1
 
 % python -m venv venv
 % source ./venv/bin/activate
-(venv) % pip install --upgrade pip setuptools
-(venv) % pip install Lektor -c constraints.txt
+% python -V
+3.11.1
+
+(venv) % make setup
 ```
-
-## Serve
-
-```zsh
-(venv) % cd site
-(venv) % lektor server
-```
-
 
 ## Build
 
 ```zsh
+(venv) % make build
+
+# or do followings manualy
 (venv) % cd site
 (venv) % lektor build --output-path ../public
+```
+
+## Development
+
+```zsh
+(venv) % cd site
+(venv) % lektor server
 ```
 
 
